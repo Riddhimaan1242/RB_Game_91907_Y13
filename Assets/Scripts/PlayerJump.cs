@@ -42,7 +42,7 @@ public class PlayerJump : MonoBehaviour
             myAnimator.SetBool("falling", false);
         }
 
-        //using space to jump
+        //using space to jump up
         if (Input.GetButtonDown("Jump") && grounded)
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
